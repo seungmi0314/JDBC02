@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>test-query.xml file</comment>
+	<!-- TB_TEST 테이블 INSERT SQL -->
+	<!-- Strint sql = "INSERT INTO" 원래였음 DAO에 이거 썼을텐데 이제 쓰지않고 여기다-->
+	<entry key = "insert">
+		INSERT INTO TB_TEST
+		VALUES(?, ?, ?)
+	</entry>	
+	
+	<!-- TB_TEST 테이블 UPDATE SQL-->
+	<entry key="update">
+	UPDATE TB_TEST SET
+	TEST_TITLE = ?,
+	TEST_CONTENT = ?
+	WHERE TEST_NO = ?
+	</entry>
+	
+</properties>
